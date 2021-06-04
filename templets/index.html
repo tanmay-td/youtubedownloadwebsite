@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post">
+    <div class="form-floating mb-3">
+          {% csrf_token %}
+        <input type="text" class="form-control buttonposition" id="floatingInput" name="url">
+        <label for="floatingInput">YOUTUBE URL</label>
+      </div>
+      <input class="btn btn-primary buttonposition" type="submit" value="DOWNLOAD">
+</form>
+
+          
+{% endblock content %}

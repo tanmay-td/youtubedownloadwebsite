@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<div class="videodisplay">
+<div class="maindiv">
+<div class="imgcls">
+<img src="{{ thumbnail }}" alt="thambnail" width="500" 
+height="300">
+</div>
+
+<p style="margin: 20px;" class="h6" >{{ title }}</p>
+
+{% if qulity360pbt %}
+<a href="{{ url360 }}"><button class="btn btn-primary but">360p Video</button></a>
+
+
+
+{% endif %}
+
+{% if qulity720pbt %}
+<a href="{{ url720 }}"><button class="btn btn-primary but">720p Video</button></a>
+
+{% endif %}
+{% endblock content %}
+</div>
+</div>
